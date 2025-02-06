@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship - Game</title>
+    <link rel="stylesheet" href="../common/styles.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Battleship</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/game/" class="active">Game</a></li>
+                <li><a href="/rules/">Rules</a></li>
+                <li><a href="/scores/">High Scores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Game in Progress</h2>
+        
+        <div class="game-info">
+            <p>Timer: <span id="timer">00:10:23</span></p>
+            <button class="restart-btn">Restart</button>
+        </div>
+
+        <div class="game-container">
+            <!-- Enemy Board -->
+            <div class="board">
+                <h3>Enemy Board</h3>
+                <div class="grid">
+                    <div class="tile hit">✓</div>
+                    <div class="tile miss">X</div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile hit">✓</div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile miss">X</div>
+                    <div class="tile"></div>
+                </div>
+            </div>
+
+            <!-- Player Board -->
+            <div class="board">
+                <h3>Your Board</h3>
+                <div class="grid">
+                    <div class="tile ship"></div>
+                    <div class="tile ship"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile ship"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Battleship Mock Game</p>
+    </footer>
+</body>
+</html>
