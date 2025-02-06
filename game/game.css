@@ -1,16 +1,11 @@
-/* General Reset */
-body {
-    background-color: #f8f9fa;
-    color: #212529;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+/* Restart Button */
+#restart-section {
+    text-align: center;
+    margin: 20px 0;
 }
 
-/* Restart Button */
 button.restart-btn {
-    background-color: #0d6efd;
+    background-color: #4da1ea;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -22,6 +17,15 @@ button.restart-btn {
 button.restart-btn:hover {
     background-color: #0056b3;
 }
+
+/* Timer Styling */
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4ca7dc;
+    margin: 10px 0;
+}
+
 
 /* Game Header */
 #game-header {
