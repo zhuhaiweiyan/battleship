@@ -1,71 +1,116 @@
-/* Game Page Styles */
-.game-info {
-    text-align: center;
-    margin-bottom: 20px;
+/* General Reset */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
-.restart-btn {
-    background-color: navy;
+/* Restart Button */
+button.restart-btn {
+    background-color: #0d6efd;
     color: white;
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-.restart-btn:hover {
-    background-color: darkblue;
+button.restart-btn:hover {
+    background-color: #0056b3;
 }
 
-/* Game Board */
-.game-container {
+/* Game Header */
+#game-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#game-info {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
+    align-items: center;
 }
 
-.board {
+/* Game Boards */
+#game-boards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 600px;
+    gap: 20px;
+}
+
+/* Board Container */
+.board-container {
     text-align: center;
+    flex: 1;
+}
+
+.board-container h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #212529;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 50px);
-    grid-template-rows: repeat(3, 50px);
-    gap: 5px;
-    margin-top: 10px;
+    grid-template-columns: repeat(5, 40px);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
+/* Tile Styles */
 .tile {
-    width: 50px;
-    height: 50px;
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #cce7ff;
+    border: 1px solid #007bff;
+    text-align: center;
+    line-height: 40px;
     font-size: 20px;
     font-weight: bold;
-    cursor: pointer;
-}
-
-.tile.ship {
-    background-color: black;
+    color: white;
+    border-radius: 4px;
 }
 
 .tile.hit {
-    background-color: red;
+    background-color: #198754;
     color: white;
 }
 
 .tile.miss {
-    background-color: blue;
+    background-color: #dc3545;
     color: white;
 }
 
+.tile:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
 /* Responsive Design */
-@media (max-width: 600px) {
-    .game-container {
+@media (max-width: 768px) {
+    #game-boards {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(5, 30px);
+    }
+
+    .tile {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
     }
 }

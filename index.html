@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Battleship Game</title>
+    <title>An Ge's Battleship</title>
     <link rel="stylesheet" href="common/styles.css" />
+    <link rel="stylesheet" href="home/home.css" />
   </head>
   <body>
     <header>
       <nav>
         <h1>An Ge's Battleship</h1>
         <ul>
-          <li><a href="./">Home</a></li>
+          <li><a href="./" class="active">Home</a></li>
           <li><a href="game/">Game</a></li>
           <li><a href="rules/">Rules</a></li>
           <li><a href="scores/">High Scores</a></li>
@@ -20,12 +21,21 @@
     </header>
 
     <main>
-      <h2>Welcome to Battleship!</h2>
-      <p>
-        A classic naval combat game where strategy and skill determine the
-        winner.
-      </p>
-      <img src="assets/images/battleship.jpg" alt="Battleship game" />
+      <section id="welcome">
+        <div class="content">
+          <h2>Welcome to Battleship!</h2>
+          <p>
+            A classic naval combat game where strategy and skill determine the
+            winner. Get ready to outwit your opponent and sink their fleet!
+          </p>
+          <img
+            src="assets/images/battleship.jpg"
+            alt="Battleship Game"
+            id="battleship-image"
+          />
+          <a href="game/" id="start-game-btn">Start Game</a>
+        </div>
+      </section>
     </main>
 
     <footer>

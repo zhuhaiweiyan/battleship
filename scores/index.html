@@ -3,46 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Battleship - High Scores</title>
+    <title>An Ge's Battleship - High Scores</title>
     <link rel="stylesheet" href="../common/styles.css" />
     <link rel="stylesheet" href="scores.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h1>Battleship</h1>
+        <h1>An Ge's Battleship</h1>
         <ul>
           <li><a href="../">Home</a></li>
           <li><a href="../game/">Game</a></li>
           <li><a href="../rules/">Rules</a></li>
-          <li><a href="../scores/">High Scores</a></li>
+          <li><a href="../scores/" class="active">High Scores</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2>High Scores</h2>
-      <table>
-        <tr>
-          <th>Username</th>
-          <th>Wins</th>
-          <th>Losses</th>
-        </tr>
-        <tr>
-          <td>Player1</td>
-          <td>10</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Player2</td>
-          <td>8</td>
-          <td>7</td>
-        </tr>
-      </table>
+      <section id="high-scores">
+        <h2>High Scores</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Wins</th>
+              <th>Losses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Player1</td>
+              <td>15</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Player2</td>
+              <td>10</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Player3</td>
+              <td>7</td>
+              <td>8</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; CS5700 PROJECT </p>
+      <p>&copy; CS5700 PROJECT</p>
     </footer>
   </body>
 </html>

@@ -3,48 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Battleship - Rules</title>
+    <title>An Ge's Battleship - Rules</title>
     <link rel="stylesheet" href="../common/styles.css" />
     <link rel="stylesheet" href="rules.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h1>Battleship</h1>
+        <h1>An Ge's Battleship</h1>
         <ul>
           <li><a href="../">Home</a></li>
           <li><a href="../game/">Game</a></li>
-          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../rules/" class="active">Rules</a></li>
           <li><a href="../scores/">High Scores</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2>Rules of Battleship</h2>
-      <ol>
-        <li>Each player has a 10x10 grid and places ships on the grid.</li>
-        <li>
-          Players take turns guessing coordinates to hit the opponent’s ships.
-        </li>
-        <li>
-          Hits are marked, and the first to sink all opponent's ships wins.
-        </li>
-      </ol>
+      <section id="rules-section">
+        <h2>Rules of Battleship</h2>
+        <div class="rules-content">
+          <h3>General Rules</h3>
+          <ol>
+            <li>Each player has a 10x10 grid to place their fleet of 5 ships.</li>
+            <li>
+              Take turns guessing coordinates to hit your opponent's ships. Hits
+              are marked as ✔, and misses as ❌.
+            </li>
+            <li>The first player to sink all of their opponent's ships is the winner.</li>
+          </ol>
+        </div>
 
-      <h3>Made By</h3>
-      <p>
-        Developed by
-        <a href="https://github.com/yourusername" target="_blank">Your Name</a>
-      </p>
-      <p>
-        Contact:
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-      </p>
+        <div class="variations-content">
+          <h3>Game Variations</h3>
+          <p>Guess as many times as you have remaining ships.</p>
+        </div>
+
+        <div class="credits-content">
+          <h3>Made By</h3>
+          <p>
+            Developed by
+            <a href="https://github.com/zhuhaiweiyan" target="_blank">ZHU HAI WEI YAN</a>
+          </p>
+          <p>Contact: <a href="mailto:ge.an2@northeastern.com">An Ge</a></p>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; CS5700 PROJECT </p>
+      <p>&copy; CS5700 PROJECT</p>
     </footer>
   </body>
 </html>

@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Battleship - Game</title>
+    <title>An Ge's Battleship - Game</title>
     <link rel="stylesheet" href="../common/styles.css" />
     <link rel="stylesheet" href="game.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h1>Battleship</h1>
+        <h1>An Ge's Battleship</h1>
         <ul>
           <li><a href="../">Home</a></li>
-          <li><a href="../game/">Game</a></li>
+          <li><a href="../game/" class="active">Game</a></li>
           <li><a href="../rules/">Rules</a></li>
           <li><a href="../scores/">High Scores</a></li>
         </ul>
@@ -21,50 +21,83 @@
     </header>
 
     <main>
-      <h2>Game in Progress</h2>
+      <section id="game-header">
+        <h2>Battle in Progress</h2>
+        <div id="game-info">
+          <p>Timer: <span>00:15:42</span></p>
+          <button id="restart-button" class="restart-btn">Restart</button>
+        </div>
+      </section>
 
-      <div class="game-info">
-        <p>Timer: <span id="timer">00:10:23</span></p>
-        <button class="restart-btn">Restart</button>
-      </div>
-
-      <div class="game-container">
+      <section id="game-boards">
         <!-- Enemy Board -->
-        <div class="board">
+        <div class="board-container">
           <h3>Enemy Board</h3>
           <div class="grid">
-            <div class="tile hit">✓</div>
-            <div class="tile miss">X</div>
+            <div class="tile hit">✔</div>
+            <div class="tile miss">❌</div>
             <div class="tile"></div>
             <div class="tile"></div>
-            <div class="tile hit">✓</div>
             <div class="tile"></div>
             <div class="tile"></div>
-            <div class="tile miss">X</div>
+            <div class="tile hit">✔</div>
             <div class="tile"></div>
+            <div class="tile miss">❌</div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile miss">❌</div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile hit">✔</div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile miss">❌</div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile hit">✔</div>
           </div>
         </div>
 
         <!-- Player Board -->
-        <div class="board">
+        <div class="board-container">
           <h3>Your Board</h3>
           <div class="grid">
-            <div class="tile ship"></div>
-            <div class="tile ship"></div>
+            <div class="tile"></div>
+            <div class="tile hit">✔</div>
             <div class="tile"></div>
             <div class="tile"></div>
-            <div class="tile ship"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile miss">❌</div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile hit">✔</div>
+            <div class="tile"></div>
+            <div class="tile miss">❌</div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile miss">❌</div>
+            <div class="tile"></div>
+            <div class="tile hit">✔</div>
             <div class="tile"></div>
             <div class="tile"></div>
             <div class="tile"></div>
             <div class="tile"></div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; CS5700 PROJECT </p>
+      <p>&copy; CS5700 PROJECT</p>
     </footer>
   </body>
 </html>
