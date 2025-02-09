@@ -1,120 +1,119 @@
 /* Restart Button */
 #restart-section {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 button.restart-btn {
-    background-color: #4da1ea;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #4da1ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button.restart-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Timer Styling */
 #timer {
-    font-size: 20px;
-    font-weight: bold;
-    color: #4ca7dc;
-    margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4ca7dc;
+  margin: 10px 0;
 }
-
 
 /* Game Header */
 #game-header {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 #game-info {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
 }
 
 /* Game Boards */
 #game-boards {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
-    max-width: 600px;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 600px;
+  gap: 20px;
 }
 
 /* Board Container */
 .board-container {
-    text-align: center;
-    flex: 1;
+  text-align: center;
+  flex: 1;
 }
 
 .board-container h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #212529;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #212529;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 40px);
-    grid-gap: 5px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 /* Tile Styles */
 .tile {
-    width: 40px;
-    height: 40px;
-    background-color: #cce7ff;
-    border: 1px solid #007bff;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: #cce7ff;
+  border: 1px solid #007bff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
 }
 
 .tile.hit {
-    background-color: #198754;
-    color: white;
+  background-color: #198754;
+  color: white;
 }
 
 .tile.miss {
-    background-color: #dc3545;
-    color: white;
+  background-color: #dc3545;
+  color: white;
 }
 
 .tile:hover {
-    filter: brightness(85%);
-    cursor: pointer;
+  filter: brightness(85%);
+  cursor: pointer;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #game-boards {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  #game-boards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .grid {
-        grid-template-columns: repeat(5, 30px);
-    }
+  .grid {
+    grid-template-columns: repeat(5, 30px);
+  }
 
-    .tile {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 16px;
-    }
+  .tile {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+  }
 }
